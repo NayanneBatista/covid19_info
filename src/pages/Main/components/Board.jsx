@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
-import Proptypes from 'prop-types'
-import { Grid, Skeleton } from '../..components'
+import PropTypes from 'prop-types'
+import { Grid, Skeleton } from '../../../components'
+import Card from './Card'
 
 function Board ({data}) {
     const { cases, todayDeaths, recovered, deaths, todayCases } = data
@@ -14,3 +15,5 @@ function Board ({data}) {
         </Grid>
     )
 }
+
+export default Board
